@@ -43,16 +43,11 @@ a {
   text-decoration: none;
 }
 
-/*----Header-----*/
+/*Header*/
 
 .header-container {
   display: flex;
   align-items: center;
-}
-
-/*---HEADER----*/
-header {
-  border-bottom: 1px solid #eeeeee;
 }
 
 /* Навигация по сайту */
@@ -743,6 +738,7 @@ footer {
 
 .input-subscription {
   display: flex;
+  margin-top: 20px;
 }
 
 .footer-input {
@@ -753,8 +749,6 @@ footer {
   padding-left: 30px;
   margin-right: 12px;
   outline: none;
-  margin-bottom: 94px;
-  margin-top: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
 }
@@ -770,7 +764,6 @@ footer {
   border-radius: 4px;
   border-color: transparent;
   margin: 0 auto;
-  margin-top: 20px;
 }
 
 .footer-icon {
@@ -819,6 +812,11 @@ footer {
 .link-portfolio-one:hover,
 .link-portfolio-one:focus {
   color: var(--accent-color);
+}
+
+/*---HEADER----*/
+header {
+  border-bottom: 1px solid #eeeeee;
 }
 
 /*---SECTION----*/
@@ -931,7 +929,6 @@ footer {
   line-height: 1.55;
   letter-spacing: 0.03em;
   padding: 63px 24px;
-  /* height: 20%; */
   transform: translateY(100%);
   transition: transform 500ms linear;
   overflow: hidden;
@@ -948,10 +945,6 @@ footer {
 .title-second {
   margin-bottom: 4px;
 }
-
-/*.title {
-  padding-top: 20px;
-}*/
 
 .img-link .title {
   color: var(--title-text-color);
@@ -993,6 +986,8 @@ footer {
 }
 
 .modal-close-button {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -1017,14 +1012,15 @@ footer {
 
 .modal-title {
   font-size: 20px;
-  line-height: 100%;
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .modal-field {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .modal-input {
@@ -1052,10 +1048,6 @@ footer {
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
 }
-
-/* .modal-input:placeholder-shown {
-  border-color: #2196f3;
-} */
 
 .modal-button {
   width: 200px;
@@ -1135,6 +1127,10 @@ button {
   color: var(--accent-color);
   text-decoration: underline;
   margin-left: 3px;
+}
+
+.modal-text {
+  height: 120px;
 }
 
 .input-check:checked + .check-text::before {
