@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -288,20 +289,19 @@
             </li>
           </ul>
         </div>
-        <form>
-          <label for="footer-input" class="footer-label"
-            >Подпишитесь на рассылку</label
-          >
+        <form class="footer-form">
+          <label for="name" class="footer-label">Подпишитесь на рассылку</label>
           <div class="input-subscription">
             <input
               type="text"
               class="footer-input"
               name="user-name"
+              id="name"
               required
               title="name"
               placeholder="E-mail"
             />
-            <button class="footer-button" type="submit">
+            <button type="submit" class="footer-button">
               Подписаться
               <svg class="footer-icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>

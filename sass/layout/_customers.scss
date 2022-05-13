@@ -1,0 +1,60 @@
+/*--------Постоянные клиенты------*/
+
+.content-logo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.logo-companies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.logo-companies-list {
+  display: flex;
+}
+
+.logo-companies-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-companies-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-companies-icon:hover,
+.logo-companies-icon:focus {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-companies-link:hover,
+.logo-companies-link:focus {
+  border-color: var(--accent-color);
+}
+
+.logo-companies-link:hover .logo-companies-icon,
+.logo-companies-link:focus .logo-companies-icon {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-companies-item:not(:last-child) {
+  margin-right: 30px;
+}
