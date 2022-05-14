@@ -7,18 +7,16 @@
 
 .feature-ul {
   display: flex;
-}
-
-.feature-ul li:not(:last-child) {
-  margin-right: 30px;
+  &::before {
+    content: icon;
+  }
 }
 
 .feature-ul li {
   width: 270px;
-}
-
-.feature-ul::before {
-  content: icon;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .feature-list {

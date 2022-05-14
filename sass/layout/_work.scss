@@ -14,10 +14,9 @@
 
 .work-pfoto {
   display: flex;
-}
-
-.work-pfoto li:not(:last-child) {
-  margin-right: 30px;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-top-wrap {
@@ -37,7 +36,5 @@
   padding-top: 27px;
   width: 370px;
   height: 70px;
-  /* transform: translateY(100%); */
   transition: transform 500ms linear;
-  /* overflow: auto; */
 }
